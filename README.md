@@ -4,5 +4,5 @@ npm install
 # to run
 npm start
 
-# port
+# open
 http://localhost:4200/
