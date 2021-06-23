@@ -1,0 +1,17 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: center;
+  margin: 20rem auto;
+}
+
+#hero-name {
+  width: 100%;
+  margin: 10px auto;
+}
+
+button {
+  width: 50%;
+  margin: 5px auto;
+}

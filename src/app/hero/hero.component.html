@@ -1,0 +1,22 @@
+<div class="entry">
+  <h2>Name Lists</h2>
+
+  <div class="form-input">
+    <label for="new-hero">Enter name: </label>
+      <input id="new-hero" #heroName placeholder="Enter Name" />
+
+      <button class="add-button" (click)="add(heroName.value); heroName.value=''">
+        Add name
+      </button>
+  </div>
+
+  <ul class="heroes">
+    <li class="list" *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
+      <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+      <button class="update" title="update hero" (click)="update(hero.id)">update</button>
+    </li>
+  </ul>
+</div>
